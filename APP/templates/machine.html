@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <link rel="stylesheet" 
+        type="text/css" 
+        href="static/css/style.css" >
+        <link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >      
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    </head>
+    <body>
+
+
+<section id="about">
+    <div >
+        <div class="container" >
+            <div class="col-md-12"> <h2 style="color:#ba2d65;">Predicting customer churn with machine learning</h2>
+            <div>
+                As with any machine learning task, data science specialists first need data to work with. 
+                Depending on the goal, researchers define what data they must collect. 
+                Next, selected data is prepared, preprocessed, and transformed in a form suitable for building machine learning models. 
+                Finding the right methods to training machines, fine-tuning the models, and selecting the best performers is another significant part of the work.
+                 Once a model that makes predictions with the highest accuracy is chosen, it can be put into production.
+                     
+            </div>
+
+
+            <div class="about-content">
+                <div class="about-content">  <strong style="color:#5472d3;">1. Application type</strong>  </div> 
+                This is a <strong> classification project</strong>, since the variable to be predicted is binary (churn or loyal).
+
+                The goal here is to model the probability of churn, conditioned on the customer features
+                     
+            </div>
+
+            <div class="about-content">
+                <div class="about-content">  <strong style="color:#5472d3;">2. Data set</strong>  
+            <br/>    The data set contains the information for creating our model. We need to configure three things here:
+             <div>
+                 1. Data source
+
+                <br/> 2. Variables
+
+               <br/>  3. Instances
+                </div>
+                  The data file bank_churn.csv contains 13 features about 10000 clients of the bank. 
+                  The features or variables are the following:
+
+<br/><strong style="color:#ba2d65;">Customer_id, </strong> unused variable.
+<br/> <strong style="color:#ba2d65;">Surname</strong> unused variable.
+<br/><strong style="color:#ba2d65;" > Credit_score,</strong> used as input.
+<br/><strong style="color:#ba2d65;" > Country, </strong> used as input.
+<br/><strong style="color:#ba2d65;" >Gender, </strong> used as input.
+<br/> <strong style="color:#ba2d65;" > Age,</strong> used as input.
+<br/><strong style="color:#ba2d65;">Tenure,</strong> used as input.
+<br/> <strong style="color:#ba2d65;">Balance,</strong> used as input.
+<br/> <strong style="color:#ba2d65;"> Products_number, </strong>used as input.
+<br/> <strong style="color:#ba2d65;">Credit_card,</strong> used as input.
+<br/><strong style="color:#ba2d65;"> Active_member,</strong> used as input.
+<br/><strong style="color:#ba2d65;"> Estimated_salary, </strong> used as input.
+<br/><strong style="color:#ba2d65;"> Exited,</strong> used as target. 1 if the client has left the bank during 
+some period or 0 if he/she has not.
+
+<div class="about-content"> The data distributions might indicate which variables might be causing attrition.
+    <br /> <h5>Example : </h5>The variable  <strong>Age  </strong>
+    <img src="/static/images/1.png" class="d-block img-fluid"     height="500px" 
+    width="500px" alt="" title="" style="margin:50px 50px 0 0px;" > </div>
+
+                
+
+                </div>
+                <div class="about-content">
+                    <div class="about-content">  The inputs-targets correlations might be more useful to understand the relation between the inputs and to know which ones that have more importance for the chrun case.
+                        <img src="/static/images/22.png" class="d-block img-fluid"     height="800px" 
+                        width="800px" alt="" title="" style="margin:50px 50px 0 60px;" >        
+                   
+                           
+            </div>
+            
+
+
+            </div>
+        </div>
+
+</div>
+<div> <br/> From the above chart, we can see that older customers have more probability of leaving the bank.</div>   
+
+
+<div class="about-content">
+    <div class="about-content">  <strong style="color:#5472d3;">3. Neural network</strong>  
+<br/>   The second step is to choose a neural network to represent the classification function. 
+For classification problems, it is composed by:
+
+<br/>1. A scaling layer.
+<br/>2. Two perceptron layers.
+<br/>3. A probabilistic layer.
+<br/> For the scaling layer, the minimum and maximum scaling method is set.
+<br/> We set 2 perceptron layers with <strong> 11 neurons  </strong> as a first guess and one output layer with <strong> 6 neurons </strong>,
+ both layers having the <strong> Rectified linear activation function. </strong> </strong>
+ <br/> At last, we will set the continuous probabilistic method for the probabilistic layer.
+</div>
+</div>
+
+<br/> The best accuracy that we had get is : 86.75%
+<img src="/static/images/accuracy.png" class="d-block img-fluid"     height="1000px" 
+                        width="1000px" alt="" title="" style="margin:50px 50px 0 60px;" >        
+</div>
+
+
+
+
+
+
+
+
+</div>
+</section>
+
+
+
+
+</body>
+</html>

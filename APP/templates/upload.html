@@ -1,0 +1,70 @@
+<html>
+
+<head><link rel="stylesheet" href="/static/css/style.css" type="text/css">
+<style>
+.button {
+    background-color: #FFFFFF;
+    border: none;
+    color: black;
+    padding: 500px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style
+ </head>
+   <body style="background-color: #4f83cc" >
+      <script>
+    function validate() {
+      var x = document.forms["upload"]["file"].value;
+      if (x == "") {
+        alert("No File provided");
+        return false;
+      }
+    }
+
+  </script>
+	
+   <div class="login-form">
+      <form name="upload" action = "/uploader" method = "POST" onsubmit= "return validate()" enctype = "multipart/form-data">
+	 <div style="margin: 0px auto">
+            <div class="login-screen">
+              <div class="app-title">
+               <h2>Upload Test Data File To Predict</h2>                                  
+              </div>
+ 		<div class="login-form">
+                <div class="control-group">
+                   <input type = "file" name = "file">                                    
+                </div>
+		
+         <input style=" background-color:#4f83cc; width:800px;",  type = "submit" value="Predict" class="btn btn-primary btn-large btn-block">
+      </div>
+     </div>
+    </div>  
+
+</form>
+        <div class="login-form">
+      <form action = "/defaultfile" method = "POST" 
+         enctype = "multipart/form-data">
+	 <div style="margin: 20px auto">
+            <div class="login-screen2">
+              <div class="app-title">
+                <h2>Use Default Test Data File To Predict</h2>                                  
+              </div>
+ 		<div class="login-form">
+                <div class="control-group">
+                  <input type = "file" name = "file">                               
+                </div>
+		
+        
+         <input style=" background-color: #4f83cc; width:800px;",  type = "submit" value="Predict" class="btn btn-primary btn-large btn-block">
+      </div>
+     </div>
+    </div>
+
+<center><a href="/logout" style="bottom: -110px;" >Logout</a><center>
+   </body>
+</html>

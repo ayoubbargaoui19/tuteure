@@ -1,0 +1,362 @@
+*{
+    margin:0;
+    padding: 2;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size:25px
+}
+    header {
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../background.jpg);
+height: 100vh;
+background-size: cover;
+background-position: center;
+
+
+    }
+
+    ul {
+        float:right;
+       list-style-type: none;
+       margin-top: 200 px;
+
+
+    }
+
+    ul li {
+        display:inline-block;
+    }
+
+    ul li a {
+        text-decoration:  none;
+        color : #fff;
+        padding : 5px 20 px; 
+        border: 1 px solid #fff;
+        transition: 0.6s ease    }
+    ul li a:hover {
+        background-color: #fff;
+        color: #000;
+
+    }
+    ul li.active a {
+        background-color: #ffff;
+        color:#000
+    }
+    .logo img {
+        float: left;
+        width: 150px;
+        height: auto;
+    }
+    .main {
+        max-width: 1200 px;
+        margin: auto;
+    }
+    .title{
+    position: absolute;
+    top: 40%;
+    left:35% ;
+    transform:  translate(-50%, -50%);
+    }
+    .title h1 {
+        color: #fff;
+        font-size: 70px;
+    }
+    .button{
+    position: absolute;
+    top: 50%;
+    left:40% ;
+    transform:  translate(-50%,-50%);
+    }
+    .btn{
+        border: 1px solid #fff;
+        padding: 10px 30px;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.6s ease;
+    }
+    .btn:hover{
+        background-color: #fff;
+        color: #000;
+    }
+
+    #nav-bar {
+        position: sticky;
+        top:0;
+        z-index: 10;
+    }
+    .navbar-brand img {
+        height: 60px;
+        padding-left: 30px;
+    }
+    .navbar_nav li  {
+padding: 0 10px
+    }
+    .navbar_nav li a {
+      float: right;
+      text-align: left;
+            }
+            #nav-bar ul li a:hover {
+                color: #007bff !important;
+            }
+            .navbar {
+                background:#fff;
+
+            }
+            navbar-toggler {
+                border: none !important;
+            }
+            .nav-link{
+                color:#555 !important;
+                font-weight: 600;
+                font-size:16px;
+            }
+            #slider {
+                width:100%;
+            }
+            .carousel-caption {
+                top:45%;
+                transform:  translateY(-50%);
+                bottom: initial !important;
+                color:black
+
+            } 
+            .carousel-caption h5 {
+                color:white;
+                font-size:50px;
+            }
+            #about{
+                padding-top:50px;
+                padding-bottom:50px;
+                color:#555;
+
+            }
+            #about .btn {
+                margin-top:20px;
+                margin-bottom: 30px
+            }
+            .about-content{
+                padding-top:20px;
+
+            }
+            .skills-bar p{
+                margin-bottom:6px;
+                font-weight:600;
+            }
+.progress-bar{
+    border-radius:16px;
+}
+.progress {
+    border-radius:16px !important;
+    margin-bottom:20px
+}
+#services{
+
+    background-image:linear-gradient(rgba(0,0,0.8),rgba(0,0,0.8),url(imgs/services.jpg));
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    padding-top:50px;
+    padding-bottom:50px;
+
+}
+#services h1{
+    text-align: center;
+    padding-bottom:10px;
+}
+#services h1::after
+{
+content:'';
+
+display:block;
+height:3px;
+width:170px;
+margin:20px auto 5px;
+
+}
+.services 
+{
+    margin-top:40px;
+}
+.icon{
+  font-size:40px;
+  margin:20px auto; 
+  padding:10px;
+  height:80px;
+  width:80px;
+  border:1px solid black;
+  border-radius: 50%;
+  
+}
+#services p {
+    font-size: 15px;
+    margin-top:20px;
+}
+.services .col-md-3:hover {
+    background: #007bff;
+    cursor:pointer;
+    transition: 0.7s
+}
+#team {
+    padding-top:50px;
+    padding-bottom: 50px;
+    color:#555
+}
+h1{
+    text-align:center;
+    color: #555 !important;
+    padding-bottom: 10px;
+
+}
+
+h1::after{
+    content: '';
+    background:#007bff;
+    display:block;
+    height:3px;
+    width:170px;margin:20px auto 5px;
+}
+
+.profile-pic {
+    margin-top:25px;
+
+}
+
+.profile-pic .img-box
+{
+opacity: 1;
+display:block;
+position: relative;
+}
+.profile-pic .img-box img
+{
+filter:grayscale(1);
+
+}
+.profile-pic .img-box img:hover
+{
+filter:grayscale(0);
+cursor: pointer;
+
+}
+.profile-pic h2 {
+    font-size:22px;
+    font-weight: bold;
+    margin-top:15px;
+    color:#007bff !important
+}
+.profile-pic h3 {
+    font-size:15px;
+    font-weight: bold;
+    margin-top:15px;
+}
+#team .fa {
+    height:25px;
+    width:25px;
+    color: #007bff !important;
+    background: #fff;
+    padding:4px;
+    border-radius: 50%
+}
+
+.img-box ul {
+    padding : 15px 0;
+position: absolute;
+z-index: 0;
+left: 50%;
+transform: translateX(-50%);
+opacity: 0;
+}
+.img-box ul li  {
+    padding : 5px;
+display: inline-block;}
+.img-box:hover ul{
+    opacity: 1;
+}
+.img-responsive  {
+    width:150px;
+}
+
+* {
+    box-sizing: border-box;
+    }
+     
+    *:focus {
+        outline: none;
+    }
+    body {
+    font-family: Arial;
+    background-color: #01142F;
+    padding: 50px;
+    }
+    .login {
+   
+    width: 300px;
+    }
+    .login-screen {
+    background-color: #FFF;
+    padding: 50px;
+    border-radius: 5px
+    }
+
+    .login-screen2 {
+        background-color: #FFF;
+        padding: 100px;
+        border-radius: 5px
+        }
+     
+    .app-title {
+    text-align: center;
+    color: #777;
+    }
+     
+    .login-form {
+    text-align: center;
+    }
+    .control-group {
+    margin-bottom: 10px;
+    }
+     
+    input {
+    text-align: center;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 250px;
+    transition: border .5s;
+    }
+     
+    input:focus {
+    border: 2px solid #3498DB;
+    box-shadow: none;
+    }
+     
+    .btn {
+      border: 2px solid transparent;
+      background: #3498DB;
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 25px;
+      padding: 10px 0;
+      text-decoration: none;
+      text-shadow: none;
+      border-radius: 3px;
+      box-shadow: none;
+      transition: 0.25s;
+      display: block;
+      width: 250px;
+      margin: 0 auto;
+    }
+     
+    .btn:hover 
+    {
+      background-color: #01142F;
+    }
+     
+    .login-link 
+    {
+      font-size: 12px;
+      color: #444;
+      display: block;
+        margin-top: 12px;
+    }
